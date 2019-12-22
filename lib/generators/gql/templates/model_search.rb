@@ -1,7 +1,7 @@
 module Resolvers
   class <%= @resolver_prefix %><%= @model_name %>Search < Resolvers::BaseSearchResolver
-    type [Types::<%= @model_name %>Type]
-    description "Lists #{@model_name.to_lower.pluralize}"
+    type [Types::<%= @model_name %>Type], null: false
+    description "Lists <%= @model_name.downcase.pluralize %>"
 
     scope { <%= @model_name %>.all }
   
