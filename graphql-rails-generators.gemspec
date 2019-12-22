@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.homepage    = 'https://github.com/ajsharp/graphql-rails-generators'
   s.license     = 'MIT'
+  s.add_runtime_dependency 'search_object_graphql'
 end
