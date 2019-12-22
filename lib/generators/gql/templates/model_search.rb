@@ -6,7 +6,7 @@ module Resolvers
     scope { <%= @model_name %>.all }
   
   <% @fields.each do |field| -%>
-  option(:<%= field[:name] %>, <%= field[:gql_type] %>)   { |scope, value| scope.where <%= field[:name] %>: value }
+  option(:<%= field[:name] %>, type: <%= field[:gql_type] %>)   { |scope, value| scope.where <%= field[:name] %>: value }
   <% end %>
     def resolve
       []
