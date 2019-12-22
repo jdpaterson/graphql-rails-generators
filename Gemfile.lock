@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    graphql (1.9.17)
+    search_object (1.2.3)
+    search_object_graphql (0.3.1)
+      graphql (~> 1.8)
+      search_object (~> 1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  search_object_graphql
+
+BUNDLED WITH
+   2.0.2
